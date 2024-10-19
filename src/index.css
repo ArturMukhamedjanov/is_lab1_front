@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 50px 50px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.field{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input, select{
+  display: block;
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+::placeholder{
+  color: steelblue;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.swich_link {
+  /* fixme: move the link to the center of the page */
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  /*position: absolute;
+  left: 40%;*/
+}
+
+.error {
+  color: tomato;
+}
+
+.main-page-block {
+  margin: 20px;
+}
+
+.menu-content {
+  display: flex; /* Меню и контент в одном ряду */
+  margin-top: 20px;
+}
+
+.form-table-box {
+  display: flex;
+}
+@media (max-width: 797px) {
+  .form-table-box {
+    flex-direction: column;  /* Switch to vertical layout */
+  }
+}
+
+.menu {
+  flex: 0 0 200px; /* Ширина меню фиксированная */
+  margin-right: 20px;
+}
+
+.content {
+  flex: 1; /* Контент занимает оставшееся пространство */
+  border: 1px solid steelblue;
+  border-radius: 5px;
+  padding: 20px;
+  min-height: 600px; /* Минимальная высота для контента */
+}
+
+table {
+  display: block; /* important */
+  height: 600px;
+  overflow-y: scroll;
+}
+
+/* Стили для оверлея */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Поверх всех элементов */
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80vh; /* Задаём максимальную высоту в 80% от высоты экрана */
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень */
+}
+
+.form-container h3 {
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  margin-bottom: 15px;
+}
+
+.form-container button {
+  margin-top: 10px;
+  width: 100%; /* Кнопки растягиваются на ширину формы */
+}
+
+.form-container .btn-cancel {
+  background: #f44336;
+  margin-top: 10px;
+}
+
+.form-container .btn-submit {
+  background: #4CAF50;
+  margin-top: 10px;
+}
+
+.locations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.locations-table th, .locations-table td {
+  border: 1px solid steelblue;
+  padding: 8px;
+  text-align: left;
+}
+
+.location-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-buttons .btn {
+  margin-bottom: 10px;
+}
+
+
+
+.table-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
